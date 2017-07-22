@@ -19,6 +19,12 @@ namespace Assets.Scripts.Scenes.Tenth
         {
             if (Input.GetMouseButtonDown(0))
             {
+                if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
+                {
+                    Popup.Instance.ShowPopup("I need something to cover my hands");
+                    return;
+                }
+
                 Debug.Log("This one is: " + IsCorrect);
                 if (IsCorrect)
                 {

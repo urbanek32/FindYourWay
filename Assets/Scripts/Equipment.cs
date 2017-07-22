@@ -40,7 +40,7 @@ namespace Assets.Scripts
 
         void Start ()
         {
-            Inventory[Items.EXIT_KEY] = true;
+            
         }
 
         void Update ()
@@ -55,6 +55,11 @@ namespace Assets.Scripts
             var itemObject = Instantiate(ItemPrefab, InventoryTransform);
             var desc = itemObject.GetComponent<ItemDescription>();
             desc.Description = HelperEnums.GetEnumDescription(item);
+        }
+
+        public bool HaveInInventory(Items item)
+        {
+            return Inventory.ContainsKey(item);
         }
     }
 }

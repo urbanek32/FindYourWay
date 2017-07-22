@@ -5,16 +5,24 @@ namespace Assets.Scripts
 {
     public enum Items
     {
-        [Description("Key which leads to exit")]
-        EXIT_KEY = 1,
+        [Description("Ancient scroll which can teleport you outside. I need magical power to use it.")]
+        EXIT_SCROLL = 1,
         [Description("Flask full of mana")]
         MANA_POTION,
-        [Description("Rusted key")]
+        [Description("Used gloves. Protect firm from wood and dragons")]
+        GLOVES,
+        [Description("Old rusty key. I wonder if still works")]
         KEY_1,
-        [Description("Really old key")]
-        KEY_2,
-        [Description("Dry matches")]
+        [Description("Botle of really holy woly water")]
+        HOLY_WATER,
+        [Description("You feel bleesed by ancient dragon goddes")]
+        BLESSING,
+        [Description("Box of matches. I wonder if I can set fire somewhere")]
         MATCHES,
+        [Description("Ancient sword of great dragon slayer. Very sharp")]
+        SWORD,
+        [Description("Cotton curtain. Someone can hide behind it")]
+        CURTAIN,
     }
 
     public class HelperEnums
