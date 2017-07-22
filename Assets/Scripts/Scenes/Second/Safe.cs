@@ -23,7 +23,9 @@ public class Safe : MonoBehaviour
                 return;
             }
 
-            Debug.Log("This one is: " + ItemId);
+            Equipment.Instance.AddToInventory(ItemId);
+            Equipment.Instance.RemoveFromInventory(Items.KEY_1);
+            _collider.enabled = false;
 
         }
     }

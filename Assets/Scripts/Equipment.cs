@@ -7,6 +7,7 @@ namespace Assets.Scripts
     {
         private static Equipment _instance;
 
+        private Dictionary<Items, GameObject> _visualInventory = new Dictionary<Items, GameObject>(); 
         public Dictionary<Items, bool> Inventory = new Dictionary<Items, bool>();
         public static Equipment Instance
         {
@@ -53,6 +54,7 @@ namespace Assets.Scripts
             Debug.Log("Added: " + item);
             Inventory[item] = true;
             var itemObject = Instantiate(ItemPrefab, InventoryTransform);
+            _visualInventory[item] = itemObject;
             var desc = itemObject.GetComponent<ItemDescription>();
             desc.Description = HelperEnums.GetEnumDescription(item);
         }
@@ -60,6 +62,13 @@ namespace Assets.Scripts
         public bool HaveInInventory(Items item)
         {
             return Inventory.ContainsKey(item);
+        }
+
+        public void RemoveFromInventory(Items item)
+        {
+            Debug.Log("Removed: " + item);
+            Inventory.Remove(item);
+            Destroy(_visualInventory[item]);
         }
     }
 }

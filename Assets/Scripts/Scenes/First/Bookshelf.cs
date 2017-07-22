@@ -21,7 +21,6 @@ namespace Assets.Scripts.Scenes.First
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("This one is: " + ItemId);
                 Equipment.Instance.AddToInventory(ItemId);
                 _collider.enabled = false;
 

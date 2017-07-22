@@ -5,7 +5,7 @@ namespace Assets.Scripts
 {
     public enum Items
     {
-        [Description("Ancient scroll which can teleport you outside. I need magical power to use it.")]
+        [Description("Ancient scroll which can teleport you outside. I need magical place to use it")]
         EXIT_SCROLL = 1,
         [Description("Flask full of mana")]
         MANA_POTION,
@@ -23,6 +23,8 @@ namespace Assets.Scripts
         SWORD,
         [Description("Cotton curtain. Someone can hide behind it")]
         CURTAIN,
+        [Description("Nice tassel. Probably from ripped rope.")]
+        TASSEL
     }
 
     public class HelperEnums

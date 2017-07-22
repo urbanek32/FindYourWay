@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.Scenes.Eighth
 {
-    public class Matches : MonoBehaviour
+    public class Tassel : MonoBehaviour
     {
         public Items ItemId;
         public GameObject Sprite;
@@ -20,7 +20,6 @@ namespace Assets.Scripts.Scenes.Eighth
             {
                 if (!_reavealed)
                 {
-                    Debug.Log("Revealed: " + ItemId);
                     _reavealed = true;
                     Sprite.SetActive(true);
                 } 

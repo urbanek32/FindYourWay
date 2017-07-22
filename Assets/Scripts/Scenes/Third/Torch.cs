@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Scenes.Second
+namespace Assets.Scripts.Scenes.Third
 {
-    public class Campfire : MonoBehaviour
+    public class Torch : MonoBehaviour
     {
+
         private BoxCollider2D _collider;
-        public Items ItemId;
+        public bool IsIgnited = false;
 
         void Start()
         {
@@ -16,16 +17,14 @@ namespace Assets.Scripts.Scenes.Second
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (!Equipment.Instance.HaveInInventory(Items.HOLY_WATER))
+                if (!Equipment.Instance.HaveInInventory(Items.MATCHES))
                 {
-                    Popup.Instance.ShowPopup("I need something to extinguish fire");
+                    Popup.Instance.ShowPopup("If I only have something to light it up");
                     return;
                 }
 
-                Equipment.Instance.AddToInventory(ItemId);
-                Equipment.Instance.RemoveFromInventory(Items.HOLY_WATER);
+                IsIgnited = true;
                 _collider.enabled = false;
-
             }
         }
     }

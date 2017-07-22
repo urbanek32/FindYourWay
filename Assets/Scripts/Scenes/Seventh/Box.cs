@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Scenes.Sixth
+namespace Assets.Scripts.Scenes.Seventh
 {
-    public class Holywater : MonoBehaviour
+    public class Box : MonoBehaviour
     {
         private BoxCollider2D _collider;
+        private SpriteRenderer _renderer;
+
+
+        public bool IsCorrect = false;
         public Items ItemId;
 
         void Start()
         {
+            _renderer = GetComponent<SpriteRenderer>();
             _collider = GetComponent<BoxCollider2D>();
         }
 
@@ -16,15 +21,13 @@ namespace Assets.Scripts.Scenes.Sixth
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (!Equipment.Instance.HaveInInventory(Items.BLESSING))
+                if (IsCorrect)
                 {
-                    Popup.Instance.ShowPopup("I'm not feeling holy enough. Maybe I need absolution");
+                    Equipment.Instance.AddToInventory(ItemId);
+                    _collider.enabled = false;
+                    _renderer.color = Color.green;
                     return;
                 }
-
-                Equipment.Instance.AddToInventory(ItemId);
-                _collider.enabled = false;
-
             }
         }
     }
