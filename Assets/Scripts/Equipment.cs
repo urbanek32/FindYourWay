@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
@@ -25,6 +26,8 @@ namespace Assets.Scripts
         public GameObject ItemPrefab;
         public Transform InventoryTransform;
         public CameraController CameraController;
+
+        public Sprite[] Images;
 
         public bool IsSecretRoomUnloced = false;
 
@@ -60,6 +63,8 @@ namespace Assets.Scripts
             _visualInventory[item] = itemObject;
             var desc = itemObject.GetComponent<ItemDescription>();
             desc.Description = HelperEnums.GetEnumDescription(item);
+            Debug.Log((int)item);
+            desc.Image.sprite = Images[(int)item];
         }
 
         public bool HaveInInventory(Items item)

@@ -265,7 +265,7 @@ Prefab:
     - target: {fileID: 224925038451455600, guid: 7ee42d75765575e49b409f9ad6481ed4,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 532.1111
+      value: 532.11115
       objectReference: {fileID: 0}
     - target: {fileID: 224925038451455600, guid: 7ee42d75765575e49b409f9ad6481ed4,
         type: 2}
@@ -331,6 +331,17 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114748362984732954, guid: 7ee42d75765575e49b409f9ad6481ed4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748362984732954, guid: 7ee42d75765575e49b409f9ad6481ed4,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a18376623bce264fb644d601c5977ed,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ee42d75765575e49b409f9ad6481ed4, type: 2}
   m_IsPrefabParent: 0
@@ -2120,6 +2131,18 @@ MonoBehaviour:
   ItemPrefab: {fileID: 1328457955977990, guid: 7ee42d75765575e49b409f9ad6481ed4, type: 2}
   InventoryTransform: {fileID: 2025784300}
   CameraController: {fileID: 12363203}
+  Images:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 3fd34033c43c346419e72ff89c0866c1, type: 3}
+  - {fileID: 21300000, guid: 293c86c2f14a86a46aa56b40e11e7679, type: 3}
+  - {fileID: 21300000, guid: 868cff2ca3993974bbe1e6f232a7a734, type: 3}
+  - {fileID: 21300000, guid: 03d41aeabf1c5e8489448cd0ff21c6a0, type: 3}
+  - {fileID: 21300000, guid: 5cff631f528be164d8c3c33c66540124, type: 3}
+  - {fileID: 21300000, guid: 5dc59f823a01b3c4a9a202be2326689d, type: 3}
+  - {fileID: 21300000, guid: 6a18376623bce264fb644d601c5977ed, type: 3}
+  - {fileID: 21300000, guid: 9ab29fbd0b9856c4b923d9bedf1993b5, type: 3}
+  - {fileID: 21300000, guid: f8aec84608e55834b956cf2e2c897d65, type: 3}
+  - {fileID: 21300000, guid: 6d53f1896979b7f47af806054343641e, type: 3}
   IsSecretRoomUnloced: 0
 --- !u!4 &909755363
 Transform:

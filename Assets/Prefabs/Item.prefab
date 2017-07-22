@@ -43,6 +43,7 @@ MonoBehaviour:
   Description: 
   DescriptionBox: {fileID: 0}
   DecriptionText: {fileID: 0}
+  Image: {fileID: 114748362984732954}
 --- !u!114 &114748362984732954
 MonoBehaviour:
   m_ObjectHideFlags: 1
