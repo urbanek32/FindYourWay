@@ -62,7 +62,7 @@ namespace Assets.Scripts
             var itemObject = Instantiate(ItemPrefab, InventoryTransform);
             _visualInventory[item] = itemObject;
             var desc = itemObject.GetComponent<ItemDescription>();
-            desc.Description = HelperEnums.GetEnumDescription(item);
+            desc.Description = HelperEnums.GetItemDescription(item);
             Debug.Log((int)item);
             desc.Image.sprite = Images[(int)item];
         }

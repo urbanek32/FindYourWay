@@ -19,7 +19,7 @@ namespace Assets.Scripts.Scenes.Third
             {
                 if (!Equipment.Instance.HaveInInventory(Items.MATCHES))
                 {
-                    Popup.Instance.ShowPopup("If I only have something to light it up");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.TORCH));
                     return;
                 }
 

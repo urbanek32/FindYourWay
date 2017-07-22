@@ -18,7 +18,7 @@ namespace Assets.Scripts.Scenes.Second
             {
                 if (!Equipment.Instance.HaveInInventory(Items.HOLY_WATER))
                 {
-                    Popup.Instance.ShowPopup("I need something to extinguish fire");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.CAMPFIRE));
                     return;
                 }
 

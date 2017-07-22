@@ -19,7 +19,7 @@ public class Safe : MonoBehaviour
         {
             if (!Equipment.Instance.HaveInInventory(Items.KEY_1))
             {
-                Popup.Instance.ShowPopup("Do I need key to open it?");
+                Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.SAFE));
                 return;
             }
 

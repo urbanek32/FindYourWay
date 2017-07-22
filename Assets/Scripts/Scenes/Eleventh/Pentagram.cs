@@ -18,7 +18,7 @@ namespace Assets.Scripts.Scenes.Eleventh
                 if (!Equipment.Instance.HaveInInventory(Items.EXIT_SCROLL)
                     || !Equipment.Instance.HaveInInventory(Items.MANA_POTION))
                 {
-                    Popup.Instance.ShowPopup("I'm still missing something");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.PENTAGRAM));
                     return;
                 }
                 

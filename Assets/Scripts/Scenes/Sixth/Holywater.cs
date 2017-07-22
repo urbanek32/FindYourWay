@@ -18,7 +18,7 @@ namespace Assets.Scripts.Scenes.Sixth
             {
                 if (!Equipment.Instance.HaveInInventory(Items.BLESSING))
                 {
-                    Popup.Instance.ShowPopup("I'm not feeling holy enough. Maybe I need absolution");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.HOLYWATER));
                     return;
                 }
 

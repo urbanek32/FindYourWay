@@ -29,7 +29,7 @@ namespace Assets.Scripts.Scenes.Third
                 }
                 else
                 {
-                    Popup.Instance.ShowPopup("Goddes can give me abosolution only within god rays");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.BLESSING));
                     return;
                 }
             }

@@ -21,7 +21,7 @@ namespace Assets.Scripts.Scenes.Tenth
             {
                 if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
                 {
-                    Popup.Instance.ShowPopup("I need something to cover my hands");
+                    Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.BOXES));
                     return;
                 }
 
