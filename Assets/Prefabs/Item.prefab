@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc800e13fdd1654a919483e744abc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Description: Old create
+  Description: 
   DescriptionBox: {fileID: 0}
   DecriptionText: {fileID: 0}
 --- !u!114 &114748362984732954

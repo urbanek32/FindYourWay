@@ -15,6 +15,7 @@ namespace Assets.Scripts
         private Vector2 _velocity;
 
         public GameObject Hud;
+        public bool ResetCamera;
 
         public void ScrollRight()
         {
@@ -31,6 +32,16 @@ namespace Assets.Scripts
             {
                 _targetCameraPositionX -= ScreenScrollOffset;
                 _currentScene--;
+            }
+        }
+
+        private void Start()
+        {
+            _targetCameraPositionX = Camera.main.transform.position.x;
+            if (ResetCamera)
+            {
+                var pos = new Vector3(0, 0, -10);
+                Camera.main.transform.position = pos;
             }
         }
 
