@@ -24,6 +24,9 @@ namespace Assets.Scripts
 
         public GameObject ItemPrefab;
         public Transform InventoryTransform;
+        public CameraController CameraController;
+
+        public bool IsSecretRoomUnloced = false;
 
         void Awake()
         {
@@ -69,6 +72,13 @@ namespace Assets.Scripts
             Debug.Log("Removed: " + item);
             Inventory.Remove(item);
             Destroy(_visualInventory[item]);
+        }
+
+        public void UnlockSecretRoom()
+        {
+            IsSecretRoomUnloced = true;
+            CameraController.NumberOfScenesOnLeft++;
+            Debug.Log("Secret room unlocked");
         }
     }
 }

@@ -5,8 +5,7 @@ namespace Assets.Scripts.Scenes.Fourth
     public class Handler : MonoBehaviour
     {
         public bool IsCorrect;
-        public Items ItemId;
-        private bool _given = false;
+        private bool _unlocked = false;
 
         void Start ()
         {
@@ -17,11 +16,17 @@ namespace Assets.Scripts.Scenes.Fourth
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("This one is: " + IsCorrect);
-                if (IsCorrect && !_given)
+                if (!Equipment.Instance.HaveInInventory(Items.TASSEL))
                 {
-                    _given = true;
-                    Equipment.Instance.AddToInventory(ItemId);
+                    Popup.Instance.ShowPopup("Looks like this rope is missing something");
+                    return;
+                }
+
+                if (IsCorrect && !_unlocked)
+                {
+                    _unlocked = true;
+                    Equipment.Instance.RemoveFromInventory(Items.TASSEL);
+                    Equipment.Instance.UnlockSecretRoom();
                 }
             }
         }

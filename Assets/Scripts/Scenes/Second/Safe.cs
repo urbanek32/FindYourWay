@@ -26,7 +26,6 @@ public class Safe : MonoBehaviour
             Equipment.Instance.AddToInventory(ItemId);
             Equipment.Instance.RemoveFromInventory(Items.KEY_1);
             _collider.enabled = false;
-
         }
     }
 }
