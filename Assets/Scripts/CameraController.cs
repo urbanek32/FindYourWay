@@ -4,8 +4,9 @@ namespace Assets.Scripts
 {
     public class CameraController : MonoBehaviour
     {
-        public int NumberOfScenes;
-        private int _currentScene = 1;
+        public int NumberOfScenesOnLeft;
+        public int NumberOfScenesOnRight;
+        private int _currentScene = 0;
 
         public float ScreenScrollOffset = 13;
         private float _targetCameraPositionX;
@@ -17,7 +18,7 @@ namespace Assets.Scripts
 
         public void ScrollRight()
         {
-            if (_currentScene < NumberOfScenes)
+            if (_currentScene < NumberOfScenesOnRight)
             {
                 _targetCameraPositionX += ScreenScrollOffset;
                 _currentScene++;
@@ -26,7 +27,7 @@ namespace Assets.Scripts
 
         public void ScrollLeft()
         {
-            if (_currentScene >= 2)
+            if (_currentScene > (NumberOfScenesOnLeft * -1))
             {
                 _targetCameraPositionX -= ScreenScrollOffset;
                 _currentScene--;
