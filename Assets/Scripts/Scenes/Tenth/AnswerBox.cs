@@ -19,13 +19,12 @@ namespace Assets.Scripts.Scenes.Tenth
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
+                /*if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
                 {
                     Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.BOXES));
                     return;
-                }
-
-                Debug.Log("This one is: " + IsCorrect);
+                }*/
+                
                 if (IsCorrect)
                 {
                     _renderer.color = Color.green;
