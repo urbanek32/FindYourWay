@@ -7,6 +7,7 @@ namespace Assets.Scripts.Scenes.Third
 
         private BoxCollider2D _collider;
         public bool IsIgnited = false;
+        public GameObject TorchLight;
 
         void Start()
         {
@@ -23,6 +24,7 @@ namespace Assets.Scripts.Scenes.Third
                     return;
                 }
 
+                TorchLight.SetActive(true);
                 IsIgnited = true;
                 _collider.enabled = false;
             }

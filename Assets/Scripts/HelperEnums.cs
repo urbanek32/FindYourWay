@@ -46,7 +46,9 @@ namespace Assets.Scripts
         [Description("I am sure I missed something... That or I don't have this key item I need...")]
         PENTAGRAM,
         [Description("I am sure I heard something...")]
-        SECRET_ROOM_UNLOCKED
+        SECRET_ROOM_UNLOCKED,
+        [Description("I wonder what would happen if I cut it in half?")]
+        CURTAIN
     }
 
     public class HelperEnums
