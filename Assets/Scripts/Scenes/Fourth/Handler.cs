@@ -7,6 +7,7 @@ namespace Assets.Scripts.Scenes.Fourth
         public bool IsCorrect;
         private bool _unlocked = false;
         private BoxCollider2D _collider;
+        public AudioSource AudioUnlockedRoom;
 
         void Start()
         {
@@ -36,6 +37,7 @@ namespace Assets.Scripts.Scenes.Fourth
                     Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.SECRET_ROOM_UNLOCKED));
                     Equipment.Instance.UnlockSecretRoom();
                     _collider.enabled = false;
+                    AudioUnlockedRoom.Play();
                 }
             }
         }

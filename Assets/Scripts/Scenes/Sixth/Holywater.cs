@@ -6,6 +6,7 @@ namespace Assets.Scripts.Scenes.Sixth
     {
         private BoxCollider2D _collider;
         public Items ItemId;
+        public AudioSource AudioItemSpawned;
 
         void Start()
         {
@@ -23,8 +24,8 @@ namespace Assets.Scripts.Scenes.Sixth
                 }
 
                 Equipment.Instance.AddToInventory(ItemId);
+                AudioItemSpawned.Play();
                 _collider.enabled = false;
-
             }
         }
     }

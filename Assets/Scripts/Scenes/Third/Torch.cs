@@ -20,11 +20,11 @@ namespace Assets.Scripts.Scenes.Third
         {
             if (Input.GetMouseButtonDown(0))
             {
-                /*if (!Equipment.Instance.HaveInInventory(Items.MATCHES))
+                if (!Equipment.Instance.HaveInInventory(Items.MATCHES))
                 {
                     Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.TORCH));
                     return;
-                }*/
+                }
 
                 TorchLight.SetActive(true);
                 IsIgnited = true;

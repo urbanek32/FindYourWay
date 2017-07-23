@@ -10,6 +10,9 @@ namespace Assets.Scripts.Scenes.Tenth
         private SpriteRenderer _renderer;
         private BoxCollider2D _collider;
         private bool _given = false;
+        private bool _audioSpawnPlayed = false;
+        public AudioSource AudioManaSpawned;
+        public AudioSource AudioManaPickup;
 
         void Start ()
         {
@@ -28,6 +31,11 @@ namespace Assets.Scripts.Scenes.Tenth
             {
                 _renderer.enabled = true;
                 _collider.enabled = true;
+                if (!_audioSpawnPlayed)
+                {
+                    _audioSpawnPlayed = true;
+                    AudioManaSpawned.Play();
+                }
             }
         }
 
@@ -39,6 +47,7 @@ namespace Assets.Scripts.Scenes.Tenth
                 _collider.enabled = false;
                 _renderer.enabled = false;
                 _given = true;
+                AudioManaPickup.Play();
             }
         }
     }

@@ -8,6 +8,8 @@ namespace Assets.Scripts.Scenes.Eighth
         public GameObject Sprite;
         private bool _reavealed = false;
         private BoxCollider2D _collider;
+        public AudioSource AudioDroppedItem;
+        public AudioSource AudioPickedUp;
 
         void Start ()
         {
@@ -22,12 +24,14 @@ namespace Assets.Scripts.Scenes.Eighth
                 {
                     _reavealed = true;
                     Sprite.SetActive(true);
+                    AudioDroppedItem.Play();
                 } 
                 else if (_reavealed)
                 {
                     Equipment.Instance.AddToInventory(ItemId);
                     Sprite.SetActive(false);
                     _collider.enabled = false;
+                    AudioPickedUp.Play();
                 }
             }
         }

@@ -6,6 +6,7 @@ namespace Assets.Scripts.Scenes.Ninth
     {
         public bool IsCorrect = false;
         public Items ItemId;
+        public AudioSource AudioItem;
 
         private BoxCollider2D _collider;
 
@@ -28,7 +29,8 @@ namespace Assets.Scripts.Scenes.Ninth
                 {
                     Equipment.Instance.AddToInventory(ItemId);
                     _collider.enabled = false;
-                    Destroy(gameObject);
+                    AudioItem.Play();
+                    Destroy(gameObject, 0.8f);
                 }
             }
         }
