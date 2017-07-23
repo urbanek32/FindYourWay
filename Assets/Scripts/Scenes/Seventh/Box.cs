@@ -10,6 +10,7 @@ namespace Assets.Scripts.Scenes.Seventh
 
         public bool IsCorrect = false;
         public Items ItemId;
+        public AudioSource Audio;
 
         void Start()
         {
@@ -26,6 +27,7 @@ namespace Assets.Scripts.Scenes.Seventh
                     Equipment.Instance.AddToInventory(ItemId);
                     _collider.enabled = false;
                     _renderer.color = Color.green;
+                    Audio.Play();
                     return;
                 }
             }

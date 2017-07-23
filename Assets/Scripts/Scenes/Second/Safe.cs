@@ -7,6 +7,7 @@ public class Safe : MonoBehaviour
 {
     private BoxCollider2D _collider;
     public Items ItemId;
+    public AudioSource SafeOpenAudio;
 
     void Start ()
     {
@@ -25,6 +26,7 @@ public class Safe : MonoBehaviour
 
             Equipment.Instance.AddToInventory(ItemId);
             Equipment.Instance.RemoveFromInventory(Items.KEY_1);
+            SafeOpenAudio.Play();
             _collider.enabled = false;
         }
     }

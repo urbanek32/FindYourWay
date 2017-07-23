@@ -7,6 +7,7 @@ namespace Assets.Scripts.Scenes.Third
         public Items ItemId;
         private BoxCollider2D _collider;
         public Torch[] Torches;
+        public AudioSource AudioSource;
 
         private void Start ()
         {
@@ -26,6 +27,7 @@ namespace Assets.Scripts.Scenes.Third
                 {
                     Equipment.Instance.AddToInventory(ItemId);
                     _collider.enabled = false;
+                    AudioSource.Play();
                 }
                 else
                 {
