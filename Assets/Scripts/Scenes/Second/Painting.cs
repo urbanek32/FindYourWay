@@ -15,7 +15,8 @@ namespace Assets.Scripts.Scenes.Second
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("JUMP SCARE");
+                Jumpscare.Instance.Show();
+                _collider.enabled = false;
             }
         }
     }

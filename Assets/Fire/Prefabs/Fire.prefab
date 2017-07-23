@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011213011554}
   - component: {fileID: 108000011596575104}
-  - component: {fileID: 114000013179338668}
   m_Layer: 0
   m_Name: Point light (3)
   m_TagString: Untagged
@@ -153,21 +152,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114000013179338668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011481070362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ad6a757e95b4544a8337d8b12ad2ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minFlickerIntensity: 2
-  maxFlickerIntensity: 4
-  mylight: {fileID: 0}
-  randomintensity: 0
 --- !u!198 &198000010246164936
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -395,7 +379,7 @@ ParticleSystem:
         m_RotationOrder: 0
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -436,7 +420,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -477,7 +461,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -518,7 +502,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:

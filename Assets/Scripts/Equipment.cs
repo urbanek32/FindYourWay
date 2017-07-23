@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.Scripts
@@ -63,7 +64,6 @@ namespace Assets.Scripts
             _visualInventory[item] = itemObject;
             var desc = itemObject.GetComponent<ItemDescription>();
             desc.Description = HelperEnums.GetItemDescription(item);
-            Debug.Log((int)item);
             desc.Image.sprite = Images[(int)item];
         }
 
@@ -84,6 +84,26 @@ namespace Assets.Scripts
             IsSecretRoomUnloced = true;
             CameraController.NumberOfScenesOnLeft++;
             Debug.Log("Secret room unlocked");
+        }
+
+        void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+        {
+            Debug.Log(scene.name);
+            if (scene.name == "main")
+            {
+                InventoryTransform = GameObject.FindGameObjectWithTag("InventoryTransform").transform;
+                CameraController = Camera.main.gameObject.GetComponent<CameraController>();
+            }
+        }
+
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnLevelFinishedLoading;
+        }
+
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnLevelFinishedLoading;
         }
     }
 }

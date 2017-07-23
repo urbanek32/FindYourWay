@@ -35,7 +35,7 @@ namespace Assets.Scripts
 
         void OnMouseEnter()
         {
-            Debug.Log("JUMP SCARE");
+            Jumpscare.Instance.Show();
         }
     }
 }

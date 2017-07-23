@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Scenes.Eleventh
 {
@@ -23,8 +24,8 @@ namespace Assets.Scripts.Scenes.Eleventh
                 }
                 
                 Debug.Log("THE END");
-                //Equipment.Instance.RemoveFromInventory(Items.KEY_1);
                 _collider.enabled = false;
+                SceneManager.LoadScene(2);
             }
         }
     }
