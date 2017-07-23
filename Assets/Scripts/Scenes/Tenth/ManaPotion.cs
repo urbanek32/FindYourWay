@@ -19,8 +19,12 @@ namespace Assets.Scripts.Scenes.Tenth
 
         void Update ()
         {
-            if (Rows[0].IsGoodAnswerSelected && Rows[1].IsGoodAnswerSelected
-                && Rows[2].IsGoodAnswerSelected && !_given)
+            if (Rows[0].IsGoodAnswerSelected 
+                && Rows[1].IsGoodAnswerSelected
+                && Rows[2].IsGoodAnswerSelected 
+                && Rows[3].IsGoodAnswerSelected 
+                && Rows[4].IsGoodAnswerSelected 
+                && !_given)
             {
                 _renderer.enabled = true;
                 _collider.enabled = true;
