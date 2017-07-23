@@ -19,11 +19,11 @@ namespace Assets.Scripts.Scenes.Tenth
         {
             if (Input.GetMouseButtonDown(0))
             {
-                /*if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
+                if (!Equipment.Instance.HaveInInventory(Items.GLOVES))
                 {
                     Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.BOXES));
                     return;
-                }*/
+                }
                 
                 if (IsCorrect)
                 {
