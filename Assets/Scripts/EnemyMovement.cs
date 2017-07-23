@@ -21,7 +21,7 @@ namespace Assets.Scripts
             if (Vector3.Distance(transform.position, _currentTarget) < 0.5f)
             {
                 _currentTarget = Waypoints[_waypointIndex++].transform.position;
-                Renderer.flipX = _waypointIndex%2 == 0;
+                Renderer.flipX = _waypointIndex%2 == 1;
             }
 
             if (_waypointIndex >= Waypoints.Length)

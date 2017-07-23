@@ -11,9 +11,12 @@ namespace Assets.Scripts.Scenes.Fiveth
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Equipment.Instance.AddToInventory(ItemId);
-                AudioItem.Play();
-                Destroy(gameObject, 0.8f);
+                if (!Equipment.Instance.HaveInInventory(Items.SWORD))
+                {
+                    Equipment.Instance.AddToInventory(ItemId);
+                    AudioItem.Play();
+                    Destroy(gameObject, 0.8f);
+                }
             }
         }
     }

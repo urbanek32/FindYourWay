@@ -93,6 +93,7 @@ namespace Assets.Scripts
             {
                 InventoryTransform = GameObject.FindGameObjectWithTag("InventoryTransform").transform;
                 CameraController = Camera.main.gameObject.GetComponent<CameraController>();
+                IsSecretRoomUnloced = false;
             }
         }
 
