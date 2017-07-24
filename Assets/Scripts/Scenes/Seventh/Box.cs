@@ -12,6 +12,8 @@ namespace Assets.Scripts.Scenes.Seventh
         public Items ItemId;
         public AudioSource Audio;
 
+        public bool IsJumpScare = false;
+
         void Start()
         {
             _renderer = GetComponent<SpriteRenderer>();
@@ -22,6 +24,12 @@ namespace Assets.Scripts.Scenes.Seventh
         {
             if (Input.GetMouseButtonDown(0))
             {
+                if (IsJumpScare)
+                {
+                    Jumpscare.Instance.Show();
+                    return;
+                }
+
                 if (IsCorrect)
                 {
                     Equipment.Instance.AddToInventory(ItemId);

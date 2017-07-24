@@ -46,16 +46,6 @@ namespace Assets.Scripts
             DontDestroyOnLoad(gameObject);
         }
 
-        void Start ()
-        {
-            
-        }
-
-        void Update ()
-        {
-		
-        }
-
         public void AddToInventory(Items item)
         {
             Debug.Log("Added: " + item);

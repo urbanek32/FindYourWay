@@ -6,7 +6,7 @@ namespace Assets.Scripts
     {
         public int NumberOfScenesOnLeft;
         public int NumberOfScenesOnRight;
-        private int _currentScene = 0;
+        public int CurrentScene = 0;
 
         public float ScreenScrollOffset = 13;
         private float _targetCameraPositionX;
@@ -19,19 +19,19 @@ namespace Assets.Scripts
 
         public void ScrollRight()
         {
-            if (_currentScene < NumberOfScenesOnRight)
+            if (CurrentScene < NumberOfScenesOnRight)
             {
                 _targetCameraPositionX += ScreenScrollOffset;
-                _currentScene++;
+                CurrentScene++;
             }
         }
 
         public void ScrollLeft()
         {
-            if (_currentScene > (NumberOfScenesOnLeft * -1))
+            if (CurrentScene > (NumberOfScenesOnLeft * -1))
             {
                 _targetCameraPositionX -= ScreenScrollOffset;
-                _currentScene--;
+                CurrentScene--;
             }
         }
 

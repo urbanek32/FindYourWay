@@ -19,6 +19,11 @@ namespace Assets.Scripts.Scenes.Ninth
         {
             if (Input.GetMouseButtonDown(0))
             {
+                if (Equipment.Instance.HaveInInventory(Items.CURTAIN))
+                {
+                    return;
+                }
+
                 if (!Equipment.Instance.HaveInInventory(Items.SWORD))
                 {
                     Popup.Instance.ShowPopup(HelperEnums.GetItemTip(ItemTips.CURTAIN));

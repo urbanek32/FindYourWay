@@ -48,7 +48,13 @@ namespace Assets.Scripts
         [Description("I am sure I heard something...")]
         SECRET_ROOM_UNLOCKED,
         [Description("I wonder what would happen if I cut it in half?")]
-        CURTAIN
+        CURTAIN,
+        [Description("Yep, for me that can be fire, but I'm not a dragon to know it...")]
+        LAMP,
+        [Description("He's doing completly nothing. I don't even have to cover him.            \"Paulo Naked Bones\"")]
+        SKELETON,
+        [Description("My only hope to understand that is Gandalf or sexy dragon mom I guess...")]
+        BOARD
     }
 
     public class HelperEnums
