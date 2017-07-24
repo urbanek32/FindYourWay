@@ -28,6 +28,7 @@ namespace Assets.Scripts.Scenes.Ninth
                 if (IsCorrect)
                 {
                     Equipment.Instance.AddToInventory(ItemId);
+                    Equipment.Instance.RemoveFromInventory(Items.SWORD);
                     _collider.enabled = false;
                     AudioItem.Play();
                     Destroy(gameObject, 0.8f);
