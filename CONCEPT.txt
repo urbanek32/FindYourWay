@@ -1,0 +1,66 @@
+itemy:
+    drzwi exit  
+    sejf na klucz   #
+    kominek #
+    biblioteczka  #
+    obraz ze schowkiem # 
+    skrzynie #
+    linki do pociagniecia #
+    posąg #
+    zapałki #
+    pochodnia #
+    dywan koniec #
+    szkieletor #
+    firanki na oknie #
+    woda święcona #
+    miecz dragonslayera #
+    potion many #
+    zwój z zaklęciem #
+    stolik  #
+    
+flow:
+    aby wyjsc z lochu trzeba skorzystac ze zwoju teleportacji
+    zwoj teleportacji wymaga posiadania many
+    aby zgasic ogien musisz uzyc swoju z lodem
+    otworzenie sejfu wymaga klucza
+    zapałki schowane pod poduszką
+    pochodnia na ścianie zapalona odsłania szkieletora
+    szkieletor kliknięty w głowe zrzuca skrzynke
+    pod dywanem jest klucz
+    schowek jest za obrazek
+    biblioteczka ma zwoje w roznych ksiazkach
+    miecz trzeba podniesc i wsadzic do ogniska
+    podpalony miecz roztopi skrzynke w lodzie
+    
+rework:
+    aby wydostac sie z gry trzeba uzyc zwoju ucieczki - leci z bookshelf
+    aby uzyc zwoje trzeba posiadac mane - dostajemy za rozwiazanie zagadki
+    aby rozwiazac zagadke musie miec rekawiczki - leca z sejfu
+    klucz do sejfu znajduje sie w kominku
+    aby zgasic kominek musze miec wode swięconą
+    aby dotknąć swięconej wody musze się pomodlić do posągu
+    aby sie pomodlic musze zapalic pochodnie
+    aby zapalic pochodnie musze miec zapalki
+    zapałki lecą z jednego z boxa (wiele boxow ekran)
+    
+    pociagniecie za sznur otwiera ostatni pokoj z pentagramem do teleportacji
+    aby pociągnać za sznur trzeba mieć frendzel
+    frendzel lezy pod koncem dywanu
+    
+    
+    bonus:
+    w pokoju z oknami musisz palic swiatlo aby nie zostac zaatakowanym
+    
+    swiatlo sie marnuje
+    
+    klikniecie na obraz summonuje kolejnego straznika i przyspiesza obu
+    
+    wez miecz ze sciany aby uciac firanke
+    firanka zaslon szkieletora aby nie rzucil sie na ciebie
+    
+    po lochu caly czas chodzi straznik - nie mozna zapalic swiatla gdy jest w tym samym roomie bo gameover
+    
+    
+    
+    
+    
