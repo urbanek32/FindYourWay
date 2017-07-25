@@ -49,9 +49,9 @@ namespace Assets.Scripts
         SECRET_ROOM_UNLOCKED,
         [Description("I wonder what would happen if I cut it in half?")]
         CURTAIN,
-        [Description("Yep, for me that can be fire, but I'm not a dragon to know it...")]
+        [Description("Yep, for me that can be fire, but I'm not a dragon to know...")]
         LAMP,
-        [Description("He's doing completly nothing. I don't even have to cover him.            \"Paulo Naked Bones\"")]
+        [Description("He's doing completly nothing. I don't even have to cover him. \n \"Paulo Bonello\"")]
         SKELETON,
         [Description("My only hope to understand that is Gandalf or sexy dragon mom I guess...")]
         BOARD
