@@ -79,7 +79,7 @@ namespace Assets.Scripts
         void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
         {
             Debug.Log(scene.name);
-            if (scene.name == "main")
+            if (scene.name == "game")
             {
                 InventoryTransform = GameObject.FindGameObjectWithTag("InventoryTransform").transform;
                 CameraController = Camera.main.gameObject.GetComponent<CameraController>();

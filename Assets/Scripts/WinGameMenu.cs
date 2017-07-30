@@ -7,7 +7,7 @@ namespace Assets.Scripts
     {
         public void LoadMainMenu()
         {
-            SceneManager.LoadScene("menu");
+            SceneManager.LoadScene(0);
         }
     }
 }

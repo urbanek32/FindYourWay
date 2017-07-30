@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
@@ -51,6 +52,11 @@ namespace Assets.Scripts
 
             transform.position = new Vector3(posX, transform.position.y, transform.position.z);
             Hud.transform.position = new Vector2(posX, transform.position.y);
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }

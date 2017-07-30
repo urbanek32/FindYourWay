@@ -9,16 +9,21 @@ namespace Assets.Scripts
 
         void Start()
         {
-            if (!PlayerPrefs.HasKey(RESOLUTION_KEY))
+            /*if (!PlayerPrefs.HasKey(RESOLUTION_KEY))
             {
                 PlayerPrefs.SetInt(RESOLUTION_KEY, 1);
                 Screen.SetResolution(1280, 720, false);
-            }
+            }*/
         }
 
         public void LoadMainGame ()
         {
-            SceneManager.LoadScene("main");	
+            SceneManager.LoadScene(1);	
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
         }
     }
 }

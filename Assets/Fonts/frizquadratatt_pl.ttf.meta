@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e26d0170218b93248a8d0a28e10657e7
+timeCreated: 1501368671
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Friz Quadrata TT
+  fontNames:
+  - Friz Quadrata TT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
